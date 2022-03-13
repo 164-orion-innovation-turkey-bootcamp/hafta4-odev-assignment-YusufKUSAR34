@@ -1,0 +1,36 @@
+<main class="form-signin">
+  <form  [formGroup]="signupForm" (ngSubmit)="signUp()" >
+
+    <h1 class="h3 mb-3 fw-normal" style="color: #0d6efd;margin-left: 80px;">Kayıt Ol</h1>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="kullaniciIsmi" name="email" placeholder="Kullanıcı İsmi" formControlName="userName">
+      <label for="kullaniciIsmi">Kullanıcı İsmi</label>
+      <div class="alert alert-danger" *ngIf="signupForm.get('userName')!.hasError('required')&&(signupForm.get('userName')!.dirty||signupForm.get('userName')!.touched)">Kullanıcı Adı zorunludur...</div>
+    </div>
+    <div class="form-floating">
+     <input type="email" class="form-control" id="email" name="email" placeholder="E-posta adresiniz" formControlName="email">
+      <label for="email">E-posta Adresi</label>
+      <div class="alert alert-danger" *ngIf="signupForm.get('email')!.hasError('required')&&(signupForm.get('email')!.dirty||signupForm.get('email')!.touched)">E-posta adresi zorunludur...</div>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Şifre" formControlName="password" >
+      <label for="floatingPassword">Şifre</label>
+      <div class="alert alert-danger" *ngIf="signupForm.get('password')!.hasError('required')&&signupForm.get('password')!.touched">Şifre zorunlu</div>
+      <div class="alert alert-danger" *ngIf="signupForm.get('password')!.hasError('minlength')">Şifre en az dört karakter olmalı</div>
+      <div class="alert alert-danger" *ngIf="signupForm.get('password')!.hasError('maxlength')">Şifre en fazla sekiz karakter olmalı</div>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPasswordConfirm" name="passwordconfirm" placeholder="Şifre Doğrula" formControlName="confirmPassword" >
+      <label for="floatingPasswordConfrim">Şifre Doğrula</label>
+      <div class="alert alert-danger" *ngIf="signupForm.get('confirmPassword')!.hasError('required')&&signupForm.get('confirmPassword')!.touched">Şifre doğrulama gerekli</div>
+      <div class="alert alert-danger" *ngIf="signupForm.hasError('misMatch')&&signupForm.get('confirmPassword')!.touched">Şifreler uyumsuz</div>
+    </div>
+
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit" [disabled]="!signupForm.valid">Kaydol</button>
+
+
+  </form>
+  <a routerLink="/login" class="baglanti">Zaten kayıtlı mısın? Oturum açmak için tıkla...</a>
+
+</main>

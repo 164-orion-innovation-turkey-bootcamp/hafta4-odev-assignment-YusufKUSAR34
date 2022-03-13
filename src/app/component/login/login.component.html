@@ -1,0 +1,26 @@
+<main class="form-signin">
+
+  <form  [formGroup]="loginForm"  (ngSubmit)="login()">
+
+    <h1 class="h3 mb-3 fw-normal " style="color: #0d6efd;margin-left: 40px;">Sisteme Giriş</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" name="email" placeholder="E-posta adresiniz" formControlName="email" >
+      <label for="floatingInput">E-posta Adresi</label>
+      <div class="alert alert-danger" *ngIf="loginForm.get('email')!.hasError('required')&&loginForm.get('email')!.dirty">E posta zorunludur...</div>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Şifre" formControlName="password" >
+      <label for="floatingPassword">Şifre</label>
+      <div class="alert alert-danger" *ngIf="loginForm.get('password')!.hasError('required')&&loginForm.get('password')!.dirty">Şifre zorunludur...</div>
+    </div>
+
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit" [disabled]="!loginForm.valid">Oturum Aç</button>
+
+
+  </form>
+  <a routerLink="/signup" class="baglanti">Yeni Kullanıcı mı? Kayıt olmak için tıklayın</a>
+
+
+</main>

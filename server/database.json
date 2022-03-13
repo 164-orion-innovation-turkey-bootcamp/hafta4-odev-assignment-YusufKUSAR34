@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "Yusuf",
+      "email": "yusuf.kusar34@gmail.com",
+      "password": "12345",
+      "confirmPassword": "12345"
+    },
+    {
+      "id": 2,
+      "userName": "Sevim",
+      "email": "sevim@gmail.com",
+      "password": "12345",
+      "confirmPassword": "12345"
+    },
+    {
+      "userName": "ahmet",
+      "email": "ahmetseyitoglu@gmail.com",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "id": 3
+    },
+    {
+      "userName": "Can",
+      "email": "can@gmail.com",
+      "password": "abcd",
+      "confirmPassword": "abcd",
+      "id": 4
+    },
+    {
+      "userName": "Selim",
+      "email": "selim@gmail.com",
+      "password": "selim",
+      "confirmPassword": "selim",
+      "id": 5
+    }
+  ]
+}
