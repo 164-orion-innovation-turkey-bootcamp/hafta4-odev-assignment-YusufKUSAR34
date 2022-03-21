@@ -30,9 +30,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 - Vs Code
 
 ## Video
-[ecommerce](https://user-images.githubusercontent.com/96016754/159349129-719ce162-d194-468e-8ea5-29932abb5c8d.JPG)(https://youtu.be/JoTaPsKyvg4 )
+
+![ecommerce](https://user-images.githubusercontent.com/96016754/159350855-0201a580-6c62-41e2-b52f-d9ead812fb76.JPG)(https://youtu.be/JoTaPsKyvg4 )
+
  
- 
+
  
 ## Proje adımları
 1. server diye bir klasör oluşturdum.İçinde database.json dosyamı oluşturdum.Bu dosya veri tabanı bilgilerimizi(ürün,kategori,kullanıcı,satış,yorum listesi) tutan dosyamız.Bu dosyanın çalışması için (npm run server) komutunu çalıştırmamız yeterli.
