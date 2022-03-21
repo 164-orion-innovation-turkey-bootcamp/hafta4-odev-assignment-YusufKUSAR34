@@ -19,7 +19,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 - ReactiveFormsModule
 - Font Awesome
 - Bootstrap 5
-- LoginGuard
+- LoginGuard!
+
 
 ## Ön Koşullar
 - JSON Api
@@ -29,7 +30,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 - Vs Code
 
 ## Video
- https://youtu.be/JoTaPsKyvg4 
+[ecommerce](https://user-images.githubusercontent.com/96016754/159349129-719ce162-d194-468e-8ea5-29932abb5c8d.JPG)(https://youtu.be/JoTaPsKyvg4 )
+ 
  
  
 ## Proje adımları
