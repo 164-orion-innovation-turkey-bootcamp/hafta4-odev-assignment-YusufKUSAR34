@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "server":"json-server --watch ./server/database.json"
+
   },
   "private": true,
   "dependencies": {

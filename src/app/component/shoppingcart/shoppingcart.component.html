@@ -1,0 +1,84 @@
+<!-- Alışveriş sepetinde ürün varsa bu ürünleri listeliyorum -->
+<ng-container *ngIf="products.length !=0">
+  <div class="container">
+    <div class="sepet-table">
+      <div class="sepet-product">
+        <table class="table table-responsive">
+          <thead>
+              <tr>
+                   <th>Ürün İsmi</th>
+                   <th>Ürün Resmi</th>
+                   <th>Ürün Açıklaması</th>
+                   <th>Ürün Fiyatı</th>
+                   <th>İşlem</th>
+              </tr>
+          </thead>
+          <tbody>
+            <!-- ürünleri listelediğim yer -->
+               <tr *ngFor="let product of products">
+                     <td>{{product.name}}</td>
+                     <td><img [src]="product.imageUrl" alt="" ></td>
+                     <td>{{product.description}}</td>
+                     <td>{{product.price}}</td>
+
+
+                     <td>
+                         <!-- alışveriş sepetinden ürünü sildiğim yer -->
+                         <button class="btn btn-danger" (click)="removeProduct(product)">
+                             Delete
+                         </button>
+                     </td>
+
+                     <td colspan="4"></td>
+
+               </tr>
+               <tr style="width: 30%;">
+
+                <td>
+                  <!-- alışveriş sepetindeki tüm verileri sildiğim yer -->
+                  <button class="btn btn-danger" (click)="removeAllProduct()">
+                      Sepeti Temizle
+                  </button>
+                 </td>
+                 <td>
+                   <!-- kullanıcı sepete başka ürünler daha eklemek istiyorsa  ana sayfaya yönlendirip tekrar sepete bir şeyler eklemesini sağilıyorum -->
+                  <button class="btn btn-warning" routerLink="/home" >
+                     Daha Fazla Alışveriş Yap
+                  </button>
+                 </td>
+                 <td>
+                    <!-- ürünün satışını yaptığım yer -->
+                  <button class="btn btn-success" (click)="productSale()" >
+                     Satın Al
+                  </button>
+                 </td>
+                 <!--kullanıcının seçtiği ürünlerin(sepete eklediği ürünlerin) toplam fiyatı çektiğim yer -->
+                 <td>
+                     Toplam Fiyat = ${{grandTotal}}
+                 </td>
+               </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<!-- Alışveriş sepetinde ürün yoksa kullanıcının ürün seçmesi için tekrardan kullacıyı yönlendirdiğim yer -->
+<ng-container *ngIf="products.length ==0">
+<div class="container">
+  <div class="card">
+    <h5 class="card-title">Sepetim</h5>
+  </div>
+  <div class="center">
+    <img
+      src="https://media.istockphoto.com/vectors/shopping-cart-icon-vector-id1147710702?k=20&m=1147710702&s=170667a&w=0&h=ChcSZVggIMZUoPTLKBZfLes0SPYR1Oow1Pc_9thVoK4="
+      alt="">
+    <h4>Sepetin boş</h4>
+    <h6>Şimdi Sepete ürün ekle</h6>
+    <button class="btn btn-primary" routerLink="/home">Şimdi Alışveriş Yap</button>
+  </div>
+</div>
+
+</ng-container>
+

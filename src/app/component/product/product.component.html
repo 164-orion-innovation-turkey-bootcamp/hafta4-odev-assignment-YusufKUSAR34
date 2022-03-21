@@ -1,0 +1,28 @@
+<!-- Ürün filtreleme işlemi için oluşturduğum input -->
+<div class="row">
+  <div class="mb-3 mt-4  col-sm-10 justify-content-center align-items-center ">
+    <input class="form-control"
+      style="margin:0 auto ;width: 60%;padding: 0.7rem 1rem;font-size: 1rem;border-color:#000;color: #000;font-weight: bold;border-radius: 10px;"
+      id="productName" placeholder="Aradığınız ürünün ismini giriniz.." [(ngModel)]="filterText">
+    <div *ngIf="filterText" class="form-text">Şu an <strong>{{filterText}} aradınız</strong>.</div>
+  </div>
+</div>
+
+<div class="row">
+
+
+ <!-- Ürünleri listelediğim yer -->
+  <div *ngFor="let product of products | productFilter:filterText" class="card" style="width: 18rem;">
+    <a routerLink="/product-detail/{{product.id}}" class="productDetayLink"> <img [src]="product.imageUrl"
+        class="card-img-top" alt="...">
+    </a>
+    <div class="card-body">
+      <h5 class="card-title"><a routerLink="/product-detail/{{product.id}}" class="productDetayLink">{{product.name |
+          uppercase}} {{product.price | currency:'USD':true:"1.2-2"}}</a></h5>
+      <p class="card-text">{{product.description | slice:0:16}}...</p>
+      <a class="btn btn-primary" (click)="addShoppingCart(product)" style="margin-right: 5px !important;">Sepete Ekle</a>
+      <a class="btn btn-warning" routerLink="/product-detail/{{product.id}}" style="color: #fff;">Ürün Detay</a>
+    </div>
+  </div>
+
+</div>

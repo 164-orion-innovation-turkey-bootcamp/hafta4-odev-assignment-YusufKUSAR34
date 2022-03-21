@@ -1,0 +1,18 @@
+
+
+
+          <a class="btn btn-outline-dark dropdown-toggle m-2 " role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Kategoriler
+          </a>
+            <!-- Kategorileri listelediğim yer -->
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="/products">Tüm Ürünler</a></li>
+            <li *ngFor="let category of categories"><a class="dropdown-item"
+                routerLink="/products/category/{{category.id}}">{{category.name}}</a></li>
+
+          </ul>
+
+
+
+

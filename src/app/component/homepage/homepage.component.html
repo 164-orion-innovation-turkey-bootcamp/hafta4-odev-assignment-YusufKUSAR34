@@ -1,29 +1,16 @@
 <!-- Anasayfamız -->
-<p style="font-size: 35px;text-align: center;margin-top: 40px;font-weight: bold;">Anasayfa Kullanıcı Bilgileri</p>
-<!-- Kullanıcıların kullanıcı ismini ve email adreslerini anasayfa da gösterdim -->
-<table class="table">
-  <thead>
-    <tr>
 
-      <th scope="col">Kullanıcı İsmi</th>
-      <th scope="col">Email</th>
-      <th>
-        <!-- Oturum kapatmak için ve tekrardan login hesabına yönlendiren buton -->
-        <button class="btn btn-dark" routerLink="/login">
-          logout
-        </button>
-      </th>
 
-    </tr>
-  </thead>
-  <tbody>
-    <!-- bir döngü aracalığıyla tabloya kullanıcı verilerini aktardım-->
-    <tr *ngFor="let user of users">
 
-      <td>{{user.userName}}</td>
-      <td>{{user.email}}</td>
 
-    </tr>
 
-  </tbody>
-</table>
+<!-- Ürünleri ana sayfada listeliyorum -->
+    <app-product></app-product>
+
+
+
+
+
+
+
+

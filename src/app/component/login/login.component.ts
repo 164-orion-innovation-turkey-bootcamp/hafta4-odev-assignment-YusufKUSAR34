@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
     private alertifyService: AlertifyService,
     private router:Router
   ) {}
-  //validation işlemleriniyöneten fonksiyon
+  //validation işlemlerini yöneten fonksiyon
   createLoginForm() {
     this.loginForm = this.formBuilder.group({
       email: [null, Validators.required],

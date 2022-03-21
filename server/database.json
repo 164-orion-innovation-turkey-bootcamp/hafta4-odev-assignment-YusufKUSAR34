@@ -34,6 +34,107 @@
       "password": "selim",
       "confirmPassword": "selim",
       "id": 5
+    },
+    {
+      "userName": "ahmet",
+      "email": "ahmet@gmail.com",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "id": 6
     }
-  ]
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Elektronik"
+    },
+    {
+      "id": 2,
+      "name": "Kozmetik"
+    },
+    {
+      "id": 3,
+      "name": "Kitap"
+    },
+    {
+      "id": 4,
+      "name": "Ev & Mobilya"
+    },
+    {
+      "id": 5,
+      "name": "Ayakkabı & Çanta"
+    },
+    {
+      "id": 6,
+      "name": "Saat & Aksesuar"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 2500,
+      "categoryId": 1,
+      "description": "Asus ZenBook",
+      "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Parfüm",
+      "price": 20,
+      "categoryId": 2,
+      "description": "Bargello Kadın Parfüm",
+      "imageUrl": "https://productimages.hepsiburada.net/s/40/500/10657850327090.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Şeker Portakalı",
+      "price": 5,
+      "categoryId": 3,
+      "description": "Can Çocuk Yayınları / Jose Mouro De Vasconcelos",
+      "imageUrl": "https://img.kitapyurdu.com/v1/getImage/fn:11462950/wh:true/wi:800"
+    },
+    {
+      "id": 4,
+      "name": "Orta Sehpa",
+      "price": 15,
+      "categoryId": 4,
+      "description": "Fancy Çam Orta Sehpa",
+      "imageUrl": "https://productimages.hepsiburada.net/s/49/550/10977482506290.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Omuz Çantası",
+      "price": 6,
+      "categoryId": 5,
+      "description": "Housebags Kadın Kahverengi Omuz Çantası",
+      "imageUrl": "http://www.cantamall.com/Uploads/UrunResimleri/buyuk/House-Bags--126-Kadin-Omuz-Cantasi-Taba-78b0.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Kol Saati",
+      "price": 10,
+      "categoryId": 6,
+      "description": "Casio Kol Saati",
+      "imageUrl": "https://productimages.hepsiburada.net/s/8/375/9036846694450.jpg"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "comment": "Çok güzel çok beğendim",
+      "productId": 1
+    },
+    {
+      "id": 2,
+      "comment": "idare eder",
+      "productId": 1
+    },
+    {
+      "id": 3,
+      "comment": "fena değil",
+      "productId": 1
+    }
+  ],
+  "sales": []
 }

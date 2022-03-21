@@ -1,0 +1,37 @@
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+
+
+         <!--Ürünün daha büyük resmini ve açıklamasını listelediğim yer  -->
+        <div *ngFor="let product of products">
+          <div class="productDetayImage">
+            <img [src]="product.imageUrl" class="card-img-top" alt="...">
+          </div>
+          <div class="productDetayDescription">
+            <p class="description-p"><span class="descripton-span">Açıklaması :</span> {{product.description}}</p>
+          </div>
+        </div>
+
+        <!--Ürüne ait yorumları listelediğim yer  -->
+        <div class="comments">
+          <h4 style="color: black;font-weight: bold;padding-bottom: 10px;">Yorumlar</h4>
+          <!-- Ürüne ait yorum varsa listeliyorum -->
+          <ng-container *ngIf="comments.length!=0">
+            <div *ngFor="let comment of comments">
+              <p class="comment">{{comment.comment}}</p>
+            </div>
+          </ng-container>
+          <!-- Ürüne ait yorum yoksa listelemiyorum -->
+          <ng-container *ngIf="comments.length==0">
+            <p class="comment">Bu ürünün herhangi bir yorumu yoktur...</p>
+          </ng-container>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>

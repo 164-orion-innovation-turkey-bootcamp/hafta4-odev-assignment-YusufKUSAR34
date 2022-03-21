@@ -11,13 +11,26 @@ import { SignupComponent } from './component/signup/signup.component';
 import { HomepageComponent } from './component/homepage/homepage.component';
 import { AccountService } from './services/account.service';
 import { LoginGuard } from './services/login.guard';
+import { CategoryComponent } from './component/category/category.component';
+import { ProductComponent } from './component/product/product.component';
+import { ProductFilterPipe } from './pipe/product-filter.pipe';
+
+import { ShoppingcartComponent } from './component/shoppingcart/shoppingcart.component';
+
+import { ProductDetailComponent } from './component/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-     HomepageComponent
+     HomepageComponent,
+     CategoryComponent,
+     ProductComponent,
+     ProductFilterPipe,
+    ShoppingcartComponent,
+
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
