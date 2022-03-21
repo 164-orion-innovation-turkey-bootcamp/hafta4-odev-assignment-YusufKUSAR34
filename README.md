@@ -30,7 +30,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Video
  https://youtu.be/JoTaPsKyvg4 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/JoTaPsKyvg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
  
 ## Proje adımları
 1. server diye bir klasör oluşturdum.İçinde database.json dosyamı oluşturdum.Bu dosya veri tabanı bilgilerimizi(ürün,kategori,kullanıcı,satış,yorum listesi) tutan dosyamız.Bu dosyanın çalışması için (npm run server) komutunu çalıştırmamız yeterli.
