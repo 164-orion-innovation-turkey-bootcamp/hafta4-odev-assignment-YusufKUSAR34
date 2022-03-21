@@ -31,7 +31,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Video
 
-![ecommerce](https://user-images.githubusercontent.com/96016754/159350855-0201a580-6c62-41e2-b52f-d9ead812fb76.JPG)(https://youtu.be/JoTaPsKyvg4 )
+[![ecommerce](https://user-images.githubusercontent.com/96016754/159350855-0201a580-6c62-41e2-b52f-d9ead812fb76.JPG)(https://youtu.be/JoTaPsKyvg4 )]
 
  
 
